@@ -54,6 +54,11 @@ def display_second_page():
         </script>
     """
 
+# Notice that if you prompt http://127.0.0.1:5000/ in your browser address bar, the following content will be displayed:
+# <h1>Not Found</h1> <p>The requested URL was not found on the server. If you entered the URL manually please check
+# your spelling and try again.</p>
+# This a default page created by Flask.
+
 
 if __name__ == "__main__":
     app.run()
