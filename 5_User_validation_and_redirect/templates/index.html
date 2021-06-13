@@ -1,0 +1,16 @@
+<!-- The form action should point to the endpoint where we will verify the entered credentials -->
+<form action="/verify">
+
+  Login:<br>
+  <input type="text" name="login"><br>
+
+  Password:<br>
+  <input type="password" name="password"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<!-- To optionally show message use: -->
+{% if message %}
+  <p>{{message}}</p>
+{% endif %}
