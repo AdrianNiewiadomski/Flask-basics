@@ -50,7 +50,7 @@ def select_all_books():
 
 @app.route("/books")
 def display_books():
-    # The data
+    # The data from the filtering form can be passed in request.args.
     if "author" in request.args.keys():
         return render_template("index.html", books=select_books_by_author(request.args.get("author")))
     else:
